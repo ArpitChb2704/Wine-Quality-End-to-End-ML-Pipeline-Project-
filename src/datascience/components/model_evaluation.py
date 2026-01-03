@@ -12,9 +12,9 @@ from src.datascience.constants import *
 from src.datascience.utils.common import read_yaml, create_directories,save_json
 
 #import os
-#os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/krishnaik06/datascienceproject.mlflow"
-#os.environ["MLFLOW_TRACKING_USERNAME"]="krishnaik06"
-#os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece21e0e2adb4e36a250ae3251f"
+#os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/ArpitChb2704/Wine-Quality-End-to-End-ML-Pipeline-Project-.mlflow"
+#os.environ["MLFLOW_TRACKING_USERNAME"]="ArpitChb2704"
+#os.environ["MLFLOW_TRACKING_PASSWORD"]="14cc9c9cdfdd831db6f64a78e477e5737b19db8b"
 
 
 class ModelEvaluation:
@@ -63,7 +63,7 @@ class ModelEvaluation:
                 # There are other ways to use the Model Registry, which depends on the use case,
                 # please refer to the doc for more information:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
-                mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+                mlflow.sklearn.log_model(model, "model")
             else:
                 mlflow.sklearn.log_model(model, "model")
     
